@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+
+<body>
+    <h1> Formulário </h1>
+    <table cellpading="10" cellspacing="1" border="1">
+        <form action="" method="post">
+            <tr>
+                <td rowspan="2">
+                    <form action="" method="post">
+                        <label for="nome">Nome: </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1"> <input type="text" id="nome" name="nome" size="40" maxlength="40" value=""
+                        placeholder="Digite o nome do usuário" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <label for="email">Email pessoal: </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <input type="email" id="email" name="email" size="40" maxlength="40"
+                        placeholder="Digite seu email pessoal"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <label for="Senha">Senha: </label>
+                </td>
+            </tr>
+            <td>
+                <input type="password" id="senha" name="senha" size="40"> <br><br>
+            </td>
+            </tr>
+            <td rowspan="2">
+                <label for=""> Data nascimento: </label>
+            </td>
+            <tr>
+                <td>
+                    <input type="date" required> <br><br>
+                </td>
+            <tr>
+            <tr>
+                <td colspan="2">
+                    <p> Deixe um comentário:</p>
+                    <textarea name="comentário" cols="50" rows="10" placeholder="Escreva aqui seu comentário"
+                        readonly></textarea>
+                </td>
+            <tr>
+            <tr>
+                <td>
+                    <label for=""> Máteria de interesse </label>
+                    <br>
+                    <input type="checkbox" name="auto" value="auto">Backend
+                    <br>
+                    <input type="checkbox" name="auto" value="auto">Frontend
+                    <br>
+                    <input type="checkbox" name="auto" value="auto">FullStack
+                </td>
+                <td>
+                    <label for="">Tipo de Viagem:</label>
+                    <br>
+                    <input type="checkbox" name="auto" value="auto">Negócios
+                    <br>
+                    <input type="checkbox" name="auto" value="auto">Lazer
+                    <br>
+                    <input type="checkbox" name="auto" value="auto">Turismo
+                    <br>
+                    <input type="checkbox" name="auto" value="auto">Acadêmico
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Esporte Favorito:</label>
+                    <select name="Esportes" size="1">
+                        <option value="">Selecione</option>
+                        <option value="Futebol">Futebol</option>
+                        <option value="Basquete">Basquete</option>
+                        <option value="Vôlei">Vôlei</option>
+                        <option value="Tênis">Tênis</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="">Investimentos</label>
+                    <select name="Investimentos" size="1">
+                        <option value="">Selecione</option>
+                        <option value="Poupança">Poupança</option>
+                        <option value="CDB">CDB</option>
+                        <option value="Tesouro">Tesouro Direto</option>
+                        <option value="Fundos">Fundos Imobiliários</option>
+                        <option value="CDI">CDI</option>
+                        <option value="Cripto">Cripto</option>
+                        <option value="Ações">Ações</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Escolha uma cor:</label>
+                    <input type="color" id="cor" name="cor">
+                </td>
+                <td>
+                    <label for="arquivo">Selecione um arquivo:</label>
+                    <input type="file" id="arquivo" name="arquivo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">Data e hora de envio:</label>
+                    <input type="datetime-local" name="dtlocal" id="dtlocal">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar">
+                </td>
+                <td>
+                    <input type="reset" value="limpar">
+                </td>
+            </tr>
+        </form>
+
+    </table>
+</body>
+
+</html>
