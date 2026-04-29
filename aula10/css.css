@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.externo{
+    color: brown;
+    background-color: color-mix(in srgb-linear, rgb(2, 2, 45) 45%, rgb(44, 8, 8) 30%);
+    text-align: center;
+}
