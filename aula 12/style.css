@@ -1,0 +1,52 @@
+@charset "utf-8";
+*{
+    margin: 5px;
+    padding: 10px;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: rgb(148, 158, 158);
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+.passar:hover{
+color: darkslateblue;
+}
+.clique:active{
+    color: darkred;
+}
+.simbolo::before{
+    content: "\f007";
+}
+.simbolo::after{
+    content: "\f007";
+}
+.music::after{
+    content:"🎵";
+}
+.video::after{
+    content:"🎬";
+}
+.amazon::after{
+    content:"🎵";
+}
+.pai{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.first{
+    height: 200px;
+    width: 200px;
+    background:linear-gradient(to right, darkblue,lightblue) ;
+
+}
+.second{
+    height: 200px;
+    width: 200px;
+    background:linear-gradient(to right, rgb(48, 48, 48),lightgray) ;
+}
