@@ -1,0 +1,94 @@
+@charset 'UTF-8';
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filho1{
+    background-color: rgb(110, 139, 167);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.filho2{
+    background-color: rgb(32, 32, 112);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.filho3{
+    background-color: rgb(40, 32, 49);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.filho1 p, .filho2 p, .filho3 p{
+    color: white;
+}
+.filho1:hover, .filho2:hover, .filho3:hover{
+    background-color: rgb(23, 23, 32);
+    cursor: pointer;
+    transition: 0.75s;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(128, 122, 124);
+}
+.item{
+    background-color: rgb(32, 32, 112);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 0%;
+}
+.item p{
+    color: white;
+}    
+.item.a3:active{
+    background-color: rgb(32, 32, 112); 
+    cursor: pointer;
+    transition: 0.75s;
+}
+.item.a3{
+    flex-grow: 2;
+    transition: 0.2s;
+    background-color: rgb(159, 163, 172);
+}   
+
+.containner2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: rgb(128, 122, 124);
+}
+.item.b1, .item.b2{
+    background-color: rgb(32, 32, 112);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-grow: 0;
+    flex-basis: 0%;
+}
