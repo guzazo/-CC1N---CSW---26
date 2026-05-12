@@ -10,30 +10,77 @@ body{
     font-size: clamp(1.8rem, 10vw, 5 rem);
     color: rgb(181, 71, 71);
 }
-#logo{
- justify-content: left;
-}
 .principal{
     display: flex;
 }
+main{
+    padding: 10px;
+    margin: 20px 30px;
+    font-size: 3cap;
+    font-weight: bolder;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 2;
+}
 nav{
     display: flex;
-    justify-content: right;
-    gap: 30px;
     padding: 20px;
+    font-size: larger;
+}
+.nav-top{
+    padding: 25px;
     background: linear-gradient(25deg, #00243D 2%,  #00192B 50%);
+    justify-content: space-between;
+}
+.ways-top{
+    display: flex;
+    gap: 30px;
 }
 .nav-side{
     flex-direction: column;
-    width: 200px;
+    min-width: 200px;
     background: linear-gradient(145deg,#00243dce 25%, #00192bb5 75%);
     height: 100vh;
+    gap: 30px;
 }
-
 a {
     text-decoration: none;
     color: rgb(245, 245, 245);
 }
 a:hover{
     text-decoration: underline;
+}
+
+.a1{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 20px);
+    background-color: #00243D;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.a2{
+    padding: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 20px);
+    border: #00243D;
+    background-color: #00192B;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.a1:hover{
+cursor: pointer;
+}
+.a2:hover{
+    cursor: pointer;
+}
+
+.rod-down{
+    text-align: center;
+    background: linear-gradient(25deg, #00243D 2%,  #00192B 50%);
+    padding: 25px;
 }
