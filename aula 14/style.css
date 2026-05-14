@@ -5,28 +5,46 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
+    display: flex;
+    flex-direction: column;
     font-family:'Source Sans 3';
-    font-size: clamp(1.8rem, 10vw, 5 rem);
+    font-size: clamp(1rem, 10vw, 1.5rem);
     color: rgb(181, 71, 71);
+    min-height:100vh;
+    width: 100%;
+}
+@media (max-width:481px) {
+    body {font-size: 14px;}
+}
+@media (max-width:768px){
+    body{font-size: 14px;}
+    .a1 , .a2 {flex-basis: calc(100% - 20px);}
+    .nav-side {max-width: 150px;}
+        
+}
+@media (max-width:1025px){
+    body {max-width:1200px;}
+
 }
 .principal{
     display: flex;
+    flex-grow: 1;
 }
 main{
     padding: 10px;
     margin: 20px 30px;
-    font-size: 3cap;
     font-weight: bolder;
     display: flex;
-    flex-wrap: wrap;
+    flex-grow:1;
     gap: 20px;
-    flex-grow: 2;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 nav{
     display: flex;
     padding: 20px;
-    font-size: larger;
 }
 .nav-top{
     padding: 25px;
@@ -39,10 +57,10 @@ nav{
 }
 .nav-side{
     flex-direction: column;
-    min-width: 200px;
+    width: 200px;
     background: linear-gradient(145deg,#00243dce 25%, #00192bb5 75%);
-    height: 100vh;
     gap: 30px;
+    height: 100%;
 }
 a {
     text-decoration: none;
@@ -54,22 +72,23 @@ a:hover{
 
 .a1{
     flex-grow: 1;
-    flex-shrink: 1;
     flex-basis: calc(25% - 20px);
     background-color: #00243D;
     border-radius: 20px;
     text-align: center;
     padding: 20px;
+    align-content: center;
+   
 }
 .a2{
     padding: 10px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-grow: 2;
     flex-basis: calc(50% - 20px);
     border: #00243D;
     background-color: #00192B;
     border-radius: 20px;
     text-align: center;
+    align-content: center;
 }
 
 .a1:hover{
